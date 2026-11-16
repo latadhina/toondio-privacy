@@ -11,10 +11,11 @@ a{color:var(--accent)}code{background:var(--code);padding:1px 5px;border-radius:
 li{margin:.3em 0}
 </style></head><body><main>
 <h1>Toondio: Privacy Policy</h1>
-<p>Updated November 4, 2026.</p>
-<p>Toondio is a Windows app for making animated 3D videos, provided by LATA. Projects and media are saved on your computer. Optional AI requests send text and story context to the AI provider you choose, and optional ElevenLabs voices send the lines they speak to ElevenLabs. Toondio has no user account system, advertising or analytics.</p>
+<p>Updated November 16, 2026.</p>
+<p>Toondio is a Windows app for making animated 3D videos, provided by LATA. Projects and media are saved on your computer. Optional AI requests send text and story context to the AI provider you choose, and optional ElevenLabs voices send the lines they speak to ElevenLabs. If you connect your own AI app (Claude, Codex or ChatGPT on your computer), the stories you choose to Send are shared with that app on your computer. Toondio has no user account system, advertising or analytics.</p>
 <h2>Local storage</h2>
 <p>Stories, recordings, imported media, chats and settings are stored locally. Exported files are saved where you choose. The optional AI assistant and ElevenLabs voices described below are the exceptions to local processing.</p>
+<p>Toondio also keeps a copy of each story as files in its data folder (the <code>stories</code> folder), so a story can be brought back if the app&#39;s browser storage is ever cleared.</p>
 <p>For an unpackaged installation, app data is under <code>%LOCALAPPDATA%\Toondio\Data</code>. For a Store installation, it is under <code>%LOCALAPPDATA%\Packages\&lt;package-family&gt;\LocalCache\Local\Toondio\Data</code>. Help → Settings &amp; storage → Open data folder shows the actual location. Browser storage in that folder contains projects and chats. Saved API keys are encrypted with Windows data protection, tied to your Windows account; other local content is not separately encrypted by Toondio.</p>
 <p>When migrating an older CLARIO or portable profile, Toondio copies it and retains the old folder for recovery. That old folder can contain projects, recordings, chats and encrypted keys too.</p>
 <h2>Microphone, camera and spelling</h2>
@@ -36,6 +37,15 @@ li{margin:.3em 0}
 <p>You choose a provider and supply an API key. Supported providers are Google Gemini, Anthropic Claude, OpenAI, Groq and OpenRouter. A connected provider receives your key for authentication. Saved keys are not returned to the page or included in project exports.</p>
 <p>When you send a chat, Toondio sends your message, recent conversation, current script, character and scene details, and relevant earlier episode scripts directly to the selected provider. Recording and imported media bytes are not attached. Text you type or include in story context is sent, so avoid including private information you do not want that provider to receive.</p>
 <p>The provider's terms, privacy rules, retention, age limits and charges apply. OpenRouter may route requests to another model provider. Check those policies before connecting. Toondio does not operate a server that receives these requests. Removing a key in Connections deletes the saved local key; revoke it with the provider to invalidate it. Deleting local chats does not delete information already sent to a provider.</p>
+<h2>Your AI app (optional)</h2>
+<p>You can let an AI app on your computer (Claude, Codex or ChatGPT) make videos with Toondio.</p>
+<ul>
+<li><strong>Connect:</strong> when you press Connect in AI › Your AI app, Toondio adds its helper to that app&#39;s own settings and keeps a backup of them. Nothing changes until you press Connect.</li>
+<li><strong>The helper:</strong> it talks only to Toondio on the same computer, through a local connection with a key that changes every session. Toondio does the work in its own window.</li>
+<li><strong>What the app receives:</strong> only the stories you Send in AI › Your AI app (characters, looks, voices, your idea and, if you choose, your lines). They are saved as files in Documents › Toondio Maker › Kits, which the app reads. Remove one there, or in Shared, to stop sharing it.</li>
+<li><strong>The app&#39;s own terms apply:</strong> your AI app may send what it reads to its own company (for example Anthropic or OpenAI), under that app&#39;s terms and privacy policy. Toondio does not operate a server that receives any of it.</li>
+<li><strong>ElevenLabs credits:</strong> an AI app cannot spend them by itself. Toondio asks you in its own window first, unless you set a limit for it to spend without asking.</li>
+</ul>
 <h2>Logs and links</h2>
 <p>The app keeps <code>toondio.log</code> in its data folder and replaces it on startup. It records technical events and errors and is not automatically uploaded. Review it before voluntarily sharing it with support. Provider error bodies are excluded from persistent request-failure logs.</p>
 <p>Links you choose open in your browser. Those sites apply their own privacy policies.</p>
